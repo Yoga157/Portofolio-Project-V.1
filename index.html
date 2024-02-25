@@ -4,25 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8f49b7ab35.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <header>
-      <img src="./assets/images/Vector.png" alt="" class="fit-logo" />
-      <h4>Personal</h4>
+      <div class="container-logo active">
+        <div class="fit-logo">
+          <img src="./assets/images/Vector.png" />
+        </div>
+        <h5 class="h5-logo">Personal</h5>
+      </div>
+
       <nav>
-        <ul class="nav_link">
+        <ul class="taskbar">
           <li><a href="#aboutMe">About Me</a></li>
           <li><a href="#skill">Skill</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#contactMe">Contact Me</a></li>
         </ul>
-
-        <button class="btn-resume">
-          <h4 class="text-resume">Resume</h4>
-          <img src="./assets/images/download.png" alt="" class="fit-download" />
-        </button>
       </nav>
+      <button>
+        <p class="p-resume">Resume</p>
+        <img src="./assets/images/download.png" alt="" class="fit-download" />
+      </button>
+      <label class="icon">
+        <i class="fa fa-bars"></i> <i id="icon-close" class="fa fa-xmark"></i
+      ></label>
     </header>
   </body>
 </html>

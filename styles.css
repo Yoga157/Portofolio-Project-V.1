@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-logo {
+  align-items: center;
+  display: flex;
+}
+
+.fit-logo {
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.h5-logo {
+  font-family: "Sora";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+}
+
+.taskbar li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+.taskbar li a {
+  transition: all 0.3s ease 0s;
+}
+
+.taskbar li a:hover {
+  color: blue;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 1px #616161;
+}
+
+.p-resume {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin: 0.5rem;
+}
+
+.icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 660px) {
+  header {
+    position: relative;
+    justify-content: space-between;
+    border-bottom: solid;
+    margin-inline: 1rem;
+  }
+
+  .h5-logo {
+    font-family: "Sora";
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  #icon-close {
+    display: none;
+  }
+
+  .fit-logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  nav .taskbar.active {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    padding: 0;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    /* height: 100vw; */
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .taskbar {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    padding: 0;
+  }
+
+  li,
+  a {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+  }
+
+  button {
+    display: none;
+  }
+}
