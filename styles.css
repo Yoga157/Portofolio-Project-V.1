@@ -1,12 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-header {
+/* Navbar Start */
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 
-.container-logo {
+.navbar .fit-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-p {
+  justify-content: center;
+}
+
+.h5-logo {
+  font-family: "Sora";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.menu-navbar ul {
+  display: flex;
+  position: relative;
+  padding: 0;
+}
+
+.navbar li,
+a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  padding: 0.3rem;
+}
+
+.menu-navbar li a:hover {
+  border-bottom: 0.1rem solid;
+  color: blue;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 1px #616161;
+}
+
+.p-resume {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin: 0.5rem;
+}
+
+.icon {
+  display: none;
+}
+
+/* Navbar End */
+
+/* Media Query */
+@media (max-width: 680px) {
+  .navbar {
+    position: relative;
+    border-bottom: 3px solid;
+  }
+
+  .h5-logo {
+    font-family: "Sora";
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  #icon-menu {
+    display: flex;
+  }
+
+  .menu-navbar ul {
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-navbar ul.active {
+    display: flex;
+  }
+
+  .navbar li,
+  a {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    padding: 1rem;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navbar .icon {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+/* .container-logo {
   align-items: center;
   display: flex;
 }
@@ -71,7 +202,7 @@ button:hover {
 }
 
 /* RESPONSIVE */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .header {
     padding: 1.3rem 5%;
   }
@@ -115,7 +246,6 @@ button:hover {
   nav {
     position: absolute;
     top: 100%;
-    /* height: 100vw; */
     width: 100%;
     text-align: center;
   }
@@ -140,5 +270,4 @@ button:hover {
 
   button {
     display: none;
-  }
-}
+  } */

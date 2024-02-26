@@ -6,18 +6,47 @@
     <title>My Portfolio</title>
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
+      href="path/to/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/8f49b7ab35.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </head>
   <body>
     <header>
-      <div class="container-logo active">
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="fit-logo">
+          <img class="logo-p" src="./assets/images/Vector.png" />
+          <h5 class="h5-logo">Personal</h5>
+        </div>
+
+        <div class="menu-navbar">
+          <ul>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <button>
+            <p class="p-resume">Resume</p>
+            <img
+              src="./assets/images/download.png"
+              alt=""
+              class="fit-download" />
+          </button>
+        </div>
+        <label class="icon">
+          <i class="fa fa-bars" id="icon-menu"></i>
+        </label>
+      </nav>
+
+      <!-- Navbar End -->
+      <!-- <div class="container-logo active">
         <div class="fit-logo">
           <img src="./assets/images/Vector.png" />
         </div>
@@ -38,7 +67,7 @@
       </button>
       <label class="icon">
         <i class="fa fa-bars"></i> <i id="icon-close" class="fa fa-xmark"></i
-      ></label>
+      ></label> -->
     </header>
   </body>
 </html>

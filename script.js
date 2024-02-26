@@ -1,5 +1,7 @@
-btnMenu = document.querySelector(".taskbar");
-btnMenu.onClick = function () {
-  navBar = document.querySelector(".nav");
-  navBar.classList.toggle("active");
-};
+  document.addEventListener('DOMContentLoaded', function() {
+    const navBarNav = document.querySelector('.menu-navbar ul');
+    document.querySelector('#icon-menu').onclick = () => {
+      navBarNav.classList.toggle('active');
+    };
+  });
+
